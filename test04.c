@@ -16,8 +16,7 @@ int main()
   length = strlen(seq);
   printf("The length is %d\n", length);
 
- }
-
+  }
 
 
 }
