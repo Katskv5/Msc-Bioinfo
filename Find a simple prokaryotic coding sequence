@@ -14,14 +14,12 @@ int main()
    int sum1;
    int sum2;
 
-printf ("Give me prokaryotic sequences written in case letters and I will print in the output : This is a coding sequence");
-
+printf ("Give me prokaryotic sequences written in uppercase letters and I will print in the output the position of the possible starting codons ATG and the phrase: This is a coding sequence, if any, by printing the position of the first stop codon found");
 
    while ( scanf ( "%s", seq) == 1)
  {
 
     length = strlen(seq);
-
     count=0;
     sum=0;
     sum1=0;
@@ -34,9 +32,8 @@ printf ("Give me prokaryotic sequences written in case letters and I will print 
          count++;
          printf( "ATG position is %d \n", i);
         }
- }
-
-       for (i=3; i < length; i+=3)
+     }
+ for (i=3; i < length; i+=3)
       {
 
          if ( seq [ i ] == 'T' &&  seq [ i+1 ] == 'A'  && seq[ i+2 ] == 'A' )
@@ -72,9 +69,9 @@ printf ("Give me prokaryotic sequences written in case letters and I will print 
           printf("TGA position is %d \n", i);
           count ==1 && sum2 == 1;
           printf (" This is a coding sequence with TGA stop codon \n");
-                                      return 0;
+                              return 0;
           }
-        }
+       }
 
           printf ( "length= %d, ATG= %d", length, count);
  }
