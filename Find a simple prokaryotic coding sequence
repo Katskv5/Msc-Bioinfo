@@ -3,7 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdbool.h>
-
 int main()
 {
    char seq[500000];
