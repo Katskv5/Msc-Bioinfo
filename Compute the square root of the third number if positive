@@ -4,7 +4,7 @@
 int main()
 {
     float 	x;
-    float	y;
+    float	y; 
 
     for ( x= -10 ; x <= 100.0 ; x += 3 )
     {
